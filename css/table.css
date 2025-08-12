@@ -1,0 +1,28 @@
+#page table
+{
+	margin-left:auto;
+	margin-right:auto;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+#page table caption
+{
+	margin: 10px;
+	font-weight:bold;
+}
+#page table th, #page table td
+{
+	padding: 5px;
+}
+#page table tbody th, #page table tbody td
+{
+	border-bottom: 1px solid #cccccc;
+}
+#page table thead th, #page table thead td
+{
+	border-bottom: 1px solid #000000;
+}
+#page table tfoot th, #page table tfoot td
+{
+	border-top: 1px solid #000000;
+}
