@@ -1,0 +1,239 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Kay, Arthur (DCR)";RSVP=TRUE:mailto:Arthur.Kay@dcr.virginia.go
+	v
+CLASS:PUBLIC
+CREATED:20240613T134857Z
+DESCRIPTION:The Virginia Department of Recreation and Conservation (DCR)\, 
+	with assistance from third-party contractor Dewberry\, developed pluvial (
+	rainfall) flood models to advance understanding of flood hazards in coasta
+	l Virginia (57 localities). The modeling team is developing a User Guide t
+	o promote the use of the publicly available models and data products by ot
+	hers. DCR has identified you as a stakeholder with valuable input on poten
+	tial use cases for the new models that could be included in the User Guide
+	. \n\n \n\nThis is a 60-minute virtual workshop during which VA DCR welcom
+	es your feedback on:\n\n•           Potential use cases for the new Pluv
+	ial Flood Models\, and  \n\n•           Key elements to include in the P
+	luvial Flood Model User Guide\n\n \n\nRepresentatives of Dewberry's flood 
+	modeling team will provide an overview of the new resources. Then\, partic
+	ipant feedback will be collected through in-meeting polling\, structured d
+	iscussion\, and open discussion. Questions\, suggestions\, and constructiv
+	e concerns will be welcome during the Workshop.\n\n \n\nIf you are unable 
+	to attend this Workshop\, please forward this invitation to a colleague wh
+	o is available to represent your organization.\n\n \n\nThank you in advanc
+	e for your participation!\n\n_____________________________________________
+	___________________________________\n\nMicrosoft Teams Need help? <https:/
+	/aka.ms/JoinTeamsMeeting?omkt=en-US>  \n\nJoin the meeting now <https://te
+	ams.microsoft.com/l/meetup-join/19%3ameeting_ZTU3ZWUxZjItZDlmMy00YzRhLWIyY
+	jgtMGQ3ODRiNmJlNDIx%40thread.v2/0?context=%7b%22Tid%22%3a%2284b7f537-fb76-
+	42b2-ac1b-415a5597766c%22%2c%22Oid%22%3a%22130116b9-13c0-41bc-99cf-1c2214e
+	841c2%22%7d>  \n\nMeeting ID: 255 778 884 287 \n\nPasscode: 2ckjLX \n\n___
+	_____________________________\n\nDial in by phone \n\n+1 571-360-4685\,\,9
+	60181975# <tel:+15713604685\,\,960181975>  United States\, Arlington \n\nF
+	ind a local number <https://dialin.teams.microsoft.com/6f654e3a-c846-4187-
+	acb6-e9b2efffeb27?id=960181975>  \n\nPhone conference ID: 960 181 975# \n\
+	nFor organizers: Meeting options <https://teams.microsoft.com/meetingOptio
+	ns/?organizerId=130116b9-13c0-41bc-99cf-1c2214e841c2&tenantId=84b7f537-fb7
+	6-42b2-ac1b-415a5597766c&threadId=19_meeting_ZTU3ZWUxZjItZDlmMy00YzRhLWIyY
+	jgtMGQ3ODRiNmJlNDIx@thread.v2&messageId=0&language=en-US>  | Reset dial-in
+	 PIN <https://dialin.teams.microsoft.com/usp/pstnconferencing>  \n\n______
+	__________________________________________________________________________
+	\n\n \n\n\nCONFIDENTIALITY NOTICE: This e-mail message\, including any att
+	achments\, is intended only for the use of the person(s) to whom it is add
+	ressed and may contain confidential and privileged information. Any unauth
+	orized review\, use\, disclosure\, copying\, or distribution is prohibited
+	. If you are not the intended recipient\, please contact the sender by rep
+	ly e-mail and destroy all copies of the original message. \n
+DTEND;TZID="Eastern Standard Time":20240701T150000
+DTSTAMP:20240613T134550Z
+DTSTART;TZID="Eastern Standard Time":20240701T140000
+LAST-MODIFIED:20240613T134857Z
+LOCATION:Microsoft Teams Meeting
+ORGANIZER;CN="Foster, Elizabeth":mailto:efoster@Dewberry.com
+PRIORITY:5
+SEQUENCE:2
+SUMMARY:Feedback Workshop #3: VA DCR Pluvial Flood Modeling and Draft User 
+	Guide
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000800BB03DDEBCDA01000000000000000
+	0100000006D971F6C3FD8244E9436EC4624D53F6F
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns:v="urn:schemas-microsoft-com:vml" 
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-mic
+	rosoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/
+	12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head>\n\n<meta name="Gen
+	erator" content="Microsoft Word 15 (filtered medium)">\n<!--[if !mso]><sty
+	le>v\\:* {behavior:url(#default#VML)\;}\no\\:* {behavior:url(#default#VML)
+	\;}\nw\\:* {behavior:url(#default#VML)\;}\n.shape {behavior:url(#default#V
+	ML)\;}\n</style><![endif]--><style><!--\n/* Font Definitions */\n@font-fac
+	e\n	{font-family:"Cambria Math"\;\n	panose-1:2 4 5 3 5 4 6 3 2 4\;}\n@font
+	-face\n	{font-family:Calibri\;\n	panose-1:2 15 5 2 2 2 4 3 2 4\;}\n@font-f
+	ace\n	{font-family:"Segoe UI"\;\n	panose-1:2 11 5 2 4 2 4 2 2 3\;}\n@font-
+	face\n	{font-family:"Aptos Display"\;}\n/* Style Definitions */\np.MsoNorm
+	al\, li.MsoNormal\, div.MsoNormal\n	{margin:0in\;\n	font-size:11.0pt\;\n	f
+	ont-family:"Calibri"\,sans-serif\;\n	mso-ligatures:standardcontextual\;}\n
+	a:link\, span.MsoHyperlink\n	{mso-style-priority:99\;\n	color:#0563C1\;\n	
+	text-decoration:underline\;}\nspan.me-email-text\n	{mso-style-name:me-emai
+	l-text\;}\nspan.me-email-text-secondary\n	{mso-style-name:me-email-text-se
+	condary\;}\nspan.EmailStyle20\n	{mso-style-type:personal-compose\;\n	font-
+	family:"Aptos Display"\,sans-serif\;\n	color:#444444\;}\n.MsoChpDefault\n	
+	{mso-style-type:export-only\;\n	font-size:10.0pt\;\n	mso-ligatures:none\;}
+	\n@page WordSection1\n	{size:8.5in 11.0in\;\n	margin:1.0in 1.0in 1.0in 1.0
+	in\;}\ndiv.WordSection1\n	{page:WordSection1\;}\n--></style><!--[if gte ms
+	o 9]><xml>\n<o:shapedefaults v:ext="edit" spidmax="1026" />\n</xml><![endi
+	f]--><!--[if gte mso 9]><xml>\n<o:shapelayout v:ext="edit">\n<o:idmap v:ex
+	t="edit" data="1" />\n</o:shapelayout></xml><![endif]-->\n</head>\n<body l
+	ang="EN-US" link="#0563C1" vlink="#954F72" style="word-wrap:break-word">\n
+	<div class="WordSection1">\n<p class="MsoNormal" style="line-height:105%">
+	<span style="font-family:&quot\;Aptos Display&quot\;\,sans-serif\;color:#4
+	44444">The Virginia Department of Recreation and Conservation (DCR)\, with
+	 assistance from third-party contractor Dewberry\, developed pluvial (rain
+	fall)\n flood models to advance understanding of flood hazards in coastal 
+	Virginia (57 localities). The modeling team is developing a User Guide to 
+	promote the use of the publicly available models and data products by othe
+	rs. DCR has identified you as a stakeholder\n with valuable input on poten
+	tial use cases for the new models that could be included in the User Guide
+	.&nbsp\;<o:p></o:p></span></p>\n<p class="MsoNormal" style="line-height:10
+	5%"><span style="font-family:&quot\;Aptos Display&quot\;\,sans-serif\;colo
+	r:#444444"><o:p>&nbsp\;</o:p></span></p>\n<p class="MsoNormal" style="line
+	-height:11.75pt"><span style="font-family:&quot\;Aptos Display&quot\;\,san
+	s-serif\;color:#444444">This is a 60-minute virtual workshop during which 
+	VA DCR welcomes your feedback on:<o:p></o:p></span></p>\n<p class="MsoNorm
+	al" style="line-height:11.75pt"><span style="font-family:&quot\;Aptos Disp
+	lay&quot\;\,sans-serif\;color:#444444">•&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbs
+	p\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\; Potential use cases for the new Plu
+	vial Flood Models\, and&nbsp\;&nbsp\;<o:p></o:p></span></p>\n<p class="Mso
+	Normal" style="line-height:11.75pt"><span style="font-family:&quot\;Aptos 
+	Display&quot\;\,sans-serif\;color:#444444">•&nbsp\;&nbsp\;&nbsp\;&nbsp\;
+	&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\; Key elements to include in the 
+	Pluvial Flood Model User Guide<o:p></o:p></span></p>\n<p class="MsoNormal"
+	 style="line-height:105%"><span style="font-family:&quot\;Aptos Display&qu
+	ot\;\,sans-serif\;color:#444444"><o:p>&nbsp\;</o:p></span></p>\n<p class="
+	MsoNormal" style="line-height:105%"><span style="font-family:&quot\;Aptos 
+	Display&quot\;\,sans-serif\;color:#444444">Representatives of Dewberry's f
+	lood modeling team will provide an overview of the new resources. Then\, p
+	articipant feedback will be collected through\n in-meeting polling\, struc
+	tured discussion\, and open discussion. Questions\, suggestions\, and cons
+	tructive concerns will be welcome during the Workshop.<o:p></o:p></span></
+	p>\n<p class="MsoNormal" style="line-height:105%"><span style="font-family
+	:&quot\;Aptos Display&quot\;\,sans-serif\;color:#444444"><o:p>&nbsp\;</o:p
+	></span></p>\n<p class="MsoNormal" style="line-height:105%"><span style="f
+	ont-family:&quot\;Aptos Display&quot\;\,sans-serif\;color:#444444">If you 
+	are unable to attend this Workshop\, please forward this invitation to a c
+	olleague who is available to represent your organization.<o:p></o:p></span
+	></p>\n<p class="MsoNormal" style="line-height:105%"><span style="font-fam
+	ily:&quot\;Aptos Display&quot\;\,sans-serif\;color:#444444"><o:p>&nbsp\;</
+	o:p></span></p>\n<p class="MsoNormal" style="line-height:105%"><span style
+	="font-family:&quot\;Aptos Display&quot\;\,sans-serif\;color:#444444">Than
+	k you in advance for your participation!<o:p></o:p></span></p>\n<div>\n<di
+	v style="margin-bottom:.25in\;overflow:hidden">\n<p class="MsoNormal"><spa
+	n style="font-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424">__
+	__________________________________________________________________________
+	____</span><span style="font-family:&quot\;Segoe UI&quot\;\,sans-serif\;co
+	lor:#242424\;mso-ligatures:none"><o:p></o:p></span></p>\n</div>\n<div styl
+	e="margin-bottom:9.0pt">\n<p class="MsoNormal"><span class="me-email-text"
+	><b><span style="font-size:18.0pt\;font-family:&quot\;Segoe UI&quot\;\,san
+	s-serif\;color:#242424">Microsoft Teams</span></b></span><span style="font
+	-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424">\n<a href="http
+	s://aka.ms/JoinTeamsMeeting?omkt=en-US"><span style="font-size:10.5pt\;col
+	or:#5B5FC7">Need help?</span></a>\n<o:p></o:p></span></p>\n</div>\n<div st
+	yle="margin-bottom:4.5pt">\n<p class="MsoNormal"><span style="font-family:
+	&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424"><a href="https://teams.
+	microsoft.com/l/meetup-join/19%3ameeting_ZTU3ZWUxZjItZDlmMy00YzRhLWIyYjgtM
+	GQ3ODRiNmJlNDIx%40thread.v2/0?context=%7b%22Tid%22%3a%2284b7f537-fb76-42b2
+	-ac1b-415a5597766c%22%2c%22Oid%22%3a%22130116b9-13c0-41bc-99cf-1c2214e841c
+	2%22%7d" target="_blank" title="Meeting join link"><b><span style="font-si
+	ze:15.0pt\;color:#5B5FC7">Join\n the meeting now</span></b></a> <o:p></o:p
+	></span></p>\n</div>\n<div style="margin-bottom:4.5pt">\n<p class="MsoNorm
+	al"><span class="me-email-text-secondary"><span style="font-size:10.5pt\;f
+	ont-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#616161">Meeting ID:\
+	n</span></span><span class="me-email-text"><span style="font-size:10.5pt\;
+	font-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424">255 778 884
+	 287</span></span><span style="font-family:&quot\;Segoe UI&quot\;\,sans-se
+	rif\;color:#242424">\n<o:p></o:p></span></p>\n</div>\n<div style="margin-b
+	ottom:.25in">\n<p class="MsoNormal"><span class="me-email-text-secondary">
+	<span style="font-size:10.5pt\;font-family:&quot\;Segoe UI&quot\;\,sans-se
+	rif\;color:#616161">Passcode:\n</span></span><span class="me-email-text"><
+	span style="font-size:10.5pt\;font-family:&quot\;Segoe UI&quot\;\,sans-ser
+	if\;color:#242424">2ckjLX</span></span><span style="font-family:&quot\;Seg
+	oe UI&quot\;\,sans-serif\;color:#242424">\n<o:p></o:p></span></p>\n</div>\
+	n<div style="margin-bottom:.25in">\n<div class="MsoNormal" align="center" 
+	style="text-align:center"><span style="font-family:&quot\;Segoe UI&quot\;\
+	,sans-serif\;color:#242424">\n<hr size="1" width="100%" align="center">\n<
+	/span></div>\n</div>\n<div>\n<div style="margin-bottom:4.5pt">\n<p class="
+	MsoNormal"><span class="me-email-text"><b><span style="font-size:12.0pt\;f
+	ont-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424">Dial in by p
+	hone</span></b></span><span style="font-family:&quot\;Segoe UI&quot\;\,san
+	s-serif\;color:#242424">\n<o:p></o:p></span></p>\n</div>\n<div style="marg
+	in-bottom:4.5pt">\n<p class="MsoNormal"><span style="font-family:&quot\;Se
+	goe UI&quot\;\,sans-serif\;color:#242424"><a href="tel:+15713604685\,\,960
+	181975"><span style="font-size:10.5pt\;color:#5B5FC7">+1 571-360-4685\,\,9
+	60181975#</span></a>\n</span><span class="me-email-text"><span style="font
+	-size:10.5pt\;font-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#61616
+	1">United States\, Arlington</span></span><span style="font-family:&quot\;
+	Segoe UI&quot\;\,sans-serif\;color:#242424">\n<o:p></o:p></span></p>\n</di
+	v>\n<div style="margin-bottom:4.5pt">\n<p class="MsoNormal"><span style="f
+	ont-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424"><a href="htt
+	ps://dialin.teams.microsoft.com/6f654e3a-c846-4187-acb6-e9b2efffeb27?id=96
+	0181975"><span style="font-size:10.5pt\;color:#5B5FC7">Find a local number
+	</span></a>\n<o:p></o:p></span></p>\n</div>\n</div>\n<div style="margin-bo
+	ttom:.25in">\n<p class="MsoNormal"><span class="me-email-text-secondary"><
+	span style="font-size:10.5pt\;font-family:&quot\;Segoe UI&quot\;\,sans-ser
+	if\;color:#616161">Phone conference ID:\n</span></span><span class="me-ema
+	il-text"><span style="font-size:10.5pt\;font-family:&quot\;Segoe UI&quot\;
+	\,sans-serif\;color:#242424">960 181 975#</span></span><span style="font-f
+	amily:&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424">\n<o:p></o:p></sp
+	an></p>\n</div>\n<div>\n<p class="MsoNormal"><span class="me-email-text-se
+	condary"><span style="font-size:10.5pt\;font-family:&quot\;Segoe UI&quot\;
+	\,sans-serif\;color:#616161">For organizers:\n</span></span><span style="f
+	ont-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#242424"><a href="htt
+	ps://teams.microsoft.com/meetingOptions/?organizerId=130116b9-13c0-41bc-99
+	cf-1c2214e841c2&amp\;tenantId=84b7f537-fb76-42b2-ac1b-415a5597766c&amp\;th
+	readId=19_meeting_ZTU3ZWUxZjItZDlmMy00YzRhLWIyYjgtMGQ3ODRiNmJlNDIx@thread.
+	v2&amp\;messageId=0&amp\;language=en-US" target="_blank"><span style="font
+	-size:10.5pt\;color:#5B5FC7">Meeting\n options</span></a> </span><span sty
+	le="font-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#D1D1D1">|</span
+	><span style="font-family:&quot\;Segoe UI&quot\;\,sans-serif\;color:#24242
+	4">\n<a href="https://dialin.teams.microsoft.com/usp/pstnconferencing" tar
+	get="_blank">\n<span style="font-size:10.5pt\;color:#5B5FC7">Reset dial-in
+	 PIN</span></a> <o:p></o:p></span></p>\n</div>\n<div style="margin-bottom:
+	.25in\;overflow:hidden">\n<p class="MsoNormal"><span style="font-family:&q
+	uot\;Segoe UI&quot\;\,sans-serif\;color:#242424">_________________________
+	_______________________________________________________<o:p></o:p></span><
+	/p>\n</div>\n</div>\n<p class="MsoNormal"><o:p>&nbsp\;</o:p></p>\n</div>\n
+	<br>\nCONFIDENTIALITY NOTICE: This e-mail message\, including any attachme
+	nts\, is intended only for the use of the person(s) to whom it is addresse
+	d and may contain confidential and privileged information. Any unauthorize
+	d review\, use\, disclosure\, copying\, or distribution\n is prohibited. I
+	f you are not the intended recipient\, please contact the sender by reply 
+	e-mail and destroy all copies of the original message.\n</body>\n</html>\n
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-APPTLASTSEQUENCE:2
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
