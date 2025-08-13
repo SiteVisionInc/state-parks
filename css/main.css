@@ -80,7 +80,7 @@ body
 	font-weight:bold;
 	font-size: 14px;
 	line-height: 1.5;
-	background:url("/image/search.png") no-repeat;
+	background:url("https://raw.githubusercontent.com/SiteVisionInc/state-parks/master/image/search.png") no-repeat;
 	width: 222px;
 	height: 35px;
 	padding:0px;
@@ -127,7 +127,7 @@ body
 }
 .search_box1
 {
-	background:url("/image/search.jpg") no-repeat;
+	background:url("https://raw.githubusercontent.com/SiteVisionInc/state-parks/master/image/search.jpg") no-repeat;
 	background-color:transparent;
 	border:0;
 	font-weight:bold;
@@ -162,7 +162,7 @@ body
 #top_navigation
 {
 	text-align: center;
-	background: #0079C2 url("/image/white.png") repeat-x left top;
+	background: #0079C2 url("https://raw.githubusercontent.com/SiteVisionInc/state-parks/master/image/white.png") repeat-x left top;
 }
 #top_navigation a,
 #top_navigation a:visited
@@ -196,7 +196,7 @@ body
 }
 .left_gradient
 {
-	background: url("/image/white-gradient-150px-left.png") repeat-y left top;
+	background: url("https://raw.githubusercontent.com/SiteVisionInc/state-parks/master/image/white-gradient-150px-left.png") repeat-y left top;
 	height: 100%;
 	float: left;
 	width: 149px;
@@ -204,7 +204,7 @@ body
 }
 .right_gradient
 {
-	background: url("/image/white-gradient-150px-right.png") repeat-y right top;
+	background: url("https://raw.githubusercontent.com/SiteVisionInc/state-parks/master/image/white-gradient-150px-right.png") repeat-y right top;
 	height: 100%;
 	float: right;
 	width: 149px;
