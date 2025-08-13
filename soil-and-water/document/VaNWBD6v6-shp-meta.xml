@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE metadata SYSTEM "http://www.fgdc.gov/metadata/fgdc-std-001-1998.dtd">
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Virginia Department of Conservation and Recreation (DCR)</origin>
+				<pubdate>20190709</pubdate>
+				<title>The Virginia National Watershed Boundary Dataset (VaNWBD)</title>
+				<edition>version 6 of the VaNWBD sixth level units for Virginia with whole partial units</edition>
+				<geoform>vector digital data</geoform>
+				<pubinfo>
+					<pubplace>Richmond, Virginia</pubplace>
+					<publish>Virginia Department of Conservation and Recreation</publish>
+				</pubinfo>
+				<onlink>www.dcr.virginia.gov/soil_and_water/hu.shtml</onlink>
+			</citeinfo>
+		</citation>
+		<descript>
+			<abstract>These are the latest (Version 6) national hydrologic unit (HU) boundaries at levels 1-6 for Virginia.  They have been created in compliance with the 
+most recent published federal standards for delineation of hydrologic units and contain national WBD HU model changes made since that time up to the publication date.  
+The Virginia NWBD schemas include variations from the national WBD schemas. This dataset covers the whole state and is seamless with the WBD products of surrounding 
+states at the time of publication.</abstract>
+			<purpose>Developed as part of a seamless hydrologic unit product for the nation at the sixth level. To be used for more detailed watershed planning work in the state. 
+This becomes the official statewide sixth level hydrologic unit delineation for Virginia.</purpose>
+		</descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates>
+					<begdate>20050318</begdate>
+					<enddate>20190709</enddate>
+				</rngdates>
+			</timeinfo>
+			<current>development period of VaNWBD</current>
+		</timeperd>
+		<status>
+			<progress>complete as version 6</progress>
+			<update>Changes to the linework detail are made whenever reason can be shown to do so. These changes are usually so minor as to only be visible at a very large scale 
+display, and do not constitute a significant variance from the original form of this version.  Should any significant linework errors or any further significant attribution 
+errors be found after July 2019 they will be logged for revision in a seventh version.</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc>-83.792</westbc>
+				<eastbc>-75.042</eastbc>
+				<northbc>39.557</northbc>
+				<southbc>36.309</southbc>
+			</bounding>
+		</spdom>
+		<keywords>
+			<theme>
+				<themekt>none</themekt>
+				<themekey>hydrolgic units</themekey>
+				<themekey>watersheds</themekey>
+				<themekey>Watershed Boundary Dataset</themekey>
+				<themekey>fifth level</themekey>
+				<themekey>sixth level</themekey>
+				<themekey>drainage</themekey>
+			</theme>
+			<place>
+				<placekt>Counties and County Equivalents of the United States and the District of Columbia (FIPS Pub 6-3)</placekt>
+				<placekey>Virginia</placekey>
+			</place>
+		</keywords>
+		<accconst>none</accconst>
+		<useconst>none</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Karl Huber</cntper>
+					<cntorg>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</cntorg>
+				</cntperp>
+				<cntaddr>
+					<addrtype>mailing and physical</addrtype>
+					<address>600 East Main St</address>
+					<address>4th Floor</address>
+					<city>Richmond</city>
+					<state>VA</state>
+					<postal>23219</postal>
+				</cntaddr>
+				<cntvoice>804-625-3971</cntvoice>
+				<cntemail>karl.huber@dcr.virginia.gov</cntemail>
+			</cntinfo>
+		</ptcontac>
+		<native>ESRI ArcGIS 10.3.1</native>
+	</idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>The assigning of all attributes in this dataset to the arcs and polygons of the sixth level hydrologic units has been done by the state
+personnel with the authority and resources to do so.  Their work is reviewed by interested agencies of the Commonwealth and Federal government.
+Any miscoded attribution is corrected upon discovery.  Attribution that is currently correct can become incorrect due to changes made in the Watershed Boundary 
+Datast (WBD) units of bordering states.  This is especially true of HUC12 codes because there are no gaps in the sequential sixth order numbering. It is also true
+of HUC12 names, as there cannot be duplicate names within a HUC8 unit no matter if the name is not duplcated within any one state.
+The unit coding rule to have units only flow into other units with higher unit codes (i.e. 0507020102 cannot flow into 0507020101) could not be
+strictly enforced at all orders.  It was not strictly followed in the original coding of units for the first through fourth orders in the 1970s
+(i.e. 03010105 flows into 03010104, and fourth order units of 020801 flow into 02080101).  Unit codes up to the fourth order were considered established
+and not open to recoding as part of the VaNWBD development except for rare cases where mistakes had been made and all federal and state parties were agreeable
+to recoding.  The higher order flow direction of coding was originally adhered to for all fifth and sixth order units within all fourth order units until such time
+that the USGS decided that the presence of the downstream code in the polygon attribute table was suffcient for knowing flow paths.  Due to updates the
+state VAHU6 text codes for units have several instances of higher codes flowing into lower codes and not matching the order of HUC12 codes.  This occurs
+where HUC12 codes were altered after several years of HU layer use.  VAHU6 geocoding to many datasets precluded simply switching these codes after version 4.
+Reported downstream unit codes for sixth order units that, at their confluence, join to flow across a fifth order unit boundary disagree by design between
+the actual unit boundary alignment regarding flow between fifth level units.  As an example, if units A and B join to flow into C, and units A-C are all in
+the same fifth order unit, units A and B will both have a downstream unit code of C.  For the VaNWBD this will be true even if unit C is in different fifth
+level unit.</attraccr>
+		</attracc>
+		<logic>All arcs are used to define hydrologic unit boundaries or the Virginia state boundary.  There are no dangling arcs. Boundaries at all orders are seamless 
+across the boundaries of the adjoining states. Fifth order units may be constructed by aggregating sixth order units on the first 10 digits of HUC12.</logic>
+		<complete>This version of the NWBD for Virginia is considered complete.  However there are a number of reasons to anticipate an eventual update to Version 7:
+1> Further use of the layer may find needed corrections in line or attribution;
+2> Continued modifications to the WBD in other states may affect the VaNWBD linework or unit codes;
+3> WBD standards continue to evolve and can affect the VaNWBD;
+4> Greater linework accuracy will be possible when Lidar efforts in the Commonwealth are complete;
+5> Integration of the WBD with high resolution NHD will likely require WBD modifications.
+        </complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Hydrologic unit boundary locations as captured from the DRGs will degrade in accuracy where topography is flat and contours more 
+widely dispersed from one another, since contours are the basis for positioning hydrologic unit boundaries.  Accuracy will be most compromised
+along the Chesapeake Bay and Atlantic Ocean shorelines, particularly on barrier islands, due to the speed of geomorphological change in these areas.</horizpar>
+				<qhorizpa>
+					<horizpav>14.342</horizpav>
+					<horizpae>Calculated as the offset in meters from true ground location due to the National Map Accuracy Standards of the DRG source maps plus the
+resolution of the capture of coordinates from this source at display scale plus the maximum movement possible due to processing tolerances applied. 
+Therefore the value represents the worst accuracy expected under normal data capture and processing procedures.</horizpae>
+				</qhorizpa>
+			</horizpa>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Waters Resources Council, mapped by the US Geological Survey</origin>
+						<pubdate>1974</pubdate>
+						<title>Hydrologic Unit Map - 1974, State of Virginia</title>
+						<geoform>paper map</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>500000</srcscale>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>1974</begdate>
+					        <enddate>2006</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which HU levels 1-4 remained unchanged from what is depicted on these maps</srccurr>
+				</srctime>			
+				<srccitea>HUmap_1974</srccitea>
+				<srccontr>base for HU levels 1-4, although they were slightly altered at the time of VaNWBDv4 development</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Department of Agriculture, Soil Conservation Service</origin>
+						<pubdate>199206</pubdate>
+						<title>National Instruction No. 170-304: Guidelines for Mapping and Digitizing Hydrologic Units</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>1992</begdate>
+					        <enddate>2004</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this standard was used in Virginia</srccurr>
+				</srctime>		
+				<srccitea>HUstandards_1992</srccitea>
+				<srccontr>published HU development standards at the time of the creation of Virginia's 14-digit HU layer</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Department of the Interior, US Geological Survey (USGS)</origin>
+						<pubdate>unknown</pubdate>
+						<title>USGS 7.5 minute quadrangle maps</title>
+						<geoform>paper map</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>1992</begdate>
+					        <enddate>2000</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which these maps were used for delineating and capturing HU linework for Virginia</srccurr>
+				</srctime>		
+				<srccitea>USGS_7.5</srccitea>
+				<srccontr>topography base for pre-NWBDv2 layers</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</origin>
+						<origin>US Department of Agriculture, Soil Conservation Service</origin>
+						<pubdate>1989</pubdate>
+						<title>Virginia Hydrologic Units</title>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>1989</begdate>
+					        <enddate>1995</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this layer contained the official HU linework and attribution for Virginia</srccurr>
+				</srctime>		
+				<srccitea>VAHUCs_1989</srccitea>
+				<srccontr>vector basis for development of VAHU14, although much of the linework was redelineated and digitized</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</origin>
+						<origin>US Department of Agriculture (USDA), Natural Resources Conservation Service (NRCS)</origin>
+						<pubdate>199511</pubdate>
+						<title>Virginia 14-Digit Hydrologic Units</title>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>1996</begdate>
+					        <enddate>2006</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this layer contained the official HU linework and attribution for Virginia</srccurr>
+				</srctime>		
+				<srccitea>VAHU14</srccitea>
+				<srccontr>vector basis for development of VaNWBDv1, although much of the attribution changed and much more linework (and units) were added</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Federal Geographic Data Commitee Subcommittee on Spatial Water Data</origin>
+						<pubdate>20041001</pubdate>
+						<title>Federal Standards for Delineation of Hydrologic Unit Boundaries; Version 2.0</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>paper</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>2004</begdate>
+					        <enddate>2009</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this standard was used in Virginia</srccurr>
+				</srctime>		
+				<srccitea>HUstandards_2004</srccitea>
+				<srccontr>published HU development standards at the time of the creation of VaNWBDv1, VaNWBDv2, and VaNWBDv3</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Department of Agriculture, Natural Resources Conservation Service</origin>
+						<pubdate>2000</pubdate>
+						<title>enhanced digital raster graphics of 7.5 minute USGS quadrangle maps</title>
+						<geoform>raster digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>2000</begdate>
+					        <enddate>present</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which these raster images were used for delineating and capturing HU linework in Virginia</srccurr>
+				</srctime>		
+				<srccitea>USDA_DRG</srccitea>
+				<srccontr>topography base for VaNWBD versions 2-4 and most of version 5</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Department of Commerce, National Oceanic and Atmospheric Administration (NOAA)</origin>
+						<pubdate>unknown</pubdate>
+						<title>NOAA coastal navigation charts</title>
+						<geoform>digital raster graphics</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>40000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <sngdate>
+					        <caldate>2005</caldate>
+				        </sngdate>
+					</timeinfo>
+					<srccurr>year in which the charts were used for offshore delineations to meet new standards</srccurr>
+				</srctime>		
+				<srccitea>NOAA_Charts</srccitea>
+				<srccontr>bathymetry of Chesapeake Bay and Atlantic Ocean for toeline of the shore delineations</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</origin>
+						<origin>US Department of Agriculture, Natural Resources Conservation Service</origin>
+						<pubdate>200607</pubdate>
+						<title>Virginia's National Watershed Boundary Dataset - Version 1</title>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>200607</begdate>
+					        <enddate>200705</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this layer contained the official HU linework and attribution for Virginia</srccurr>
+				</srctime>
+				<srccitea>VaNWBDv1</srccitea>
+				<srccontr>vector basis for development of VaNWBDv2</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</origin>
+						<pubdate>200705</pubdate>
+						<title>Virginia's National Watershed Boundary Dataset - Version 2</title>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>200705</begdate>
+					        <enddate>200810</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this layer contained the official HU linework and attribution for Virginia</srccurr>
+				</srctime>		
+				<srccitea>VaNWBDv2</srccitea>
+				<srccontr>vector basis for development of VaNWBDv3</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</origin>
+						<pubdate>200810</pubdate>
+						<title>Virginia's National Watershed Boundary Dataset - Version 3</title>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>200810</begdate>
+					        <enddate>200909</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this layer contained the official HU linework and attribution for Virginia</srccurr>
+				</srctime>		
+				<srccitea>VaNWBDv3</srccitea>
+				<srccontr>vector basis for development of VaNWBDv4</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Department of the Interior, US Geological Survey</origin>
+						<origin>US Department of Agriculture, Natural Resources Conservation Service</origin>
+						<pubdate>2009</pubdate>
+						<title>Federal Guidelines, Requirements, and Procedures for the National Watershed Boundary Dataset</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>online</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>2009</begdate>
+					        <enddate>2013</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this standard was used in Virginia</srccurr>
+				</srctime>		
+				<srccitea>HUstandards_2009</srccitea>
+				<srccontr>published HU development standards at the time of the creation of VaNWBDv4</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</origin>
+						<pubdate>200909</pubdate>
+						<title>Virginia's National Watershed Boundary Dataset - Version 4</title>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>200909</begdate>
+					        <enddate>201607</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this layer contained the official HU linework and attribution for Virginia</srccurr>
+				</srctime>		
+				<srccitea>VaNWBDv4</srccitea>
+				<srccontr>vector basis for development of VaNWBDv5</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Information Technologies Agency, Virginia Geographic Information Network</origin>
+						<pubdate>2014</pubdate>
+						<title>Virginia Base Mapping Program Orthoimagery</title>
+						<geoform>remote-sensing image</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>200</srcscale>
+				<typesrc>online</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>2013</begdate>
+					        <enddate>2014</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>dates of imagery reviewed</srccurr>
+				</srctime>		
+				<srccitea>VBMP</srccitea>
+				<srccontr>shorelines of Atlantic Ocean, from which 3 nautical mile ocean extent boundary was created, and Potomac River for state extent, all for VaNWBDv5</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Department of the Interior, US Geological Survey</origin>
+						<origin>US Department of Agriculture, Natural Resources Conservation Service</origin>
+						<pubdate>2013</pubdate>
+						<title>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>online</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>2013</begdate>
+					        <enddate>present</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this standard was used in Virginia</srccurr>
+				</srctime>		
+				<srccitea>HUstandards_2013</srccitea>
+				<srccontr>published HU development standards at the time of the creation of VaNWBDv5</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</origin>
+						<pubdate>201607</pubdate>
+						<title>Virginia's National Watershed Boundary Dataset - Version 5</title>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+				<srcscale>24000</srcscale>
+				<typesrc>DCR server</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>201607</begdate>
+					        <enddate>201907</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this layer contained the official HU linework and attribution for Virginia</srccurr>
+				</srctime>
+				<srccitea>VaNWBDv5</srccitea>
+				<srccontr>vector and attribution basis for development of VaNWBDv6</srccontr>
+			</srcinfo>		
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>US Department of the Interior, US Geological Survey</origin>
+						<pubdate>unpublished material</pubdate>
+						<title>Watershed Boundary Dataset (WBD) Community</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>online</typesrc>
+				<srctime>
+					<timeinfo>
+				        <rngdates>
+					        <begdate>2015</begdate>
+					        <enddate>present</enddate>
+				        </rngdates>
+					</timeinfo>
+					<srccurr>period in which this site was used for unpublished standards changes and national review results</srccurr>
+				</srctime>		
+				<srccitea>WBDcom</srccitea>
+				<srccontr>HU schemas and code sets for proposed WBD model changes, which were used for creating VaNWBDv5, and required name changes,
+which were used for creating VaNWBDv6</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>The initial hydrologic units of Virginia layer was digitized by the ISSL at Virginia Tech off of the USGS 7.5 minute quadrangle maps.
+Delineations within the existing Catalog Units of HUmap_1974 were made by the VA DCR and the USDA Soil Conservation Service (SCS).  The line and attribute data 
+were delivered to the VA DCR in DLG3 format.  There were 492 units in Virginia in this version.  Units were uniquely identified by a three character string and 
+were sequentially coded downstream to upstream. As the first digital HU dataset for Virginia it was simply called the Virginia Hydrologic Unit layer.
+                </procdesc>
+				<srcused>HUmap_1974</srcused>
+				<srcused>USGS_7.5</srcused>
+				<procdate>1989</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>A 1995 permutation of the hydrologic units of Virginia were created for a number of reasons - greater possible accuracy, new HU delineation 
+standards, new watershed projects, interstate coordination, and increased use of watershed geography by the Virginia Department of Environmental Quality (DEQ).
+The NRCS, DCR, and DEQ decided in June of 1993 to revise Virginia's existing hydrologic unit system.  All linework was checked for accuracy, redelineated, 
+and digitally recaptured by DCR where improvements could be made.  Some hydrologic units were merged, others divided, and still others significantly 
+adjusted from their 1989 form.  Coordination with all nearby states resulted in the adjustment of many border units to create a greater continuance of linework 
+from state to state.  The resulting 494 watersheds were then recoded upstream to downstream (opposite the 1989 order) as per new guidelines.  Unit coding 
+continued to use a three character string as per the original version but their sequential order was appropriately reversed.  Textual descriptions of the units were 
+revised and standardized. The units of this system are often referred to as the 14 digit hydrologic units, since that is how large the official sixth order unit 
+numbering was at the time (but no longer).
+                </procdesc>
+				<srcused>HUmap_1974</srcused>
+				<srcused>VAHUCs_1989</srcused>
+				<srcused>USGS_7.5</srcused>
+				<srcused>HUstandards_1992</srcused>
+				<procdate>1995</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>An initial form of the national Watershed Boundary Dataset (WBD) was developed by the VA DCR with assistance from the USDA-NRCS and the US EPA.
+The goal was to comply with the new federal standards for the delineation of hydrologic unit boundaries.  The final product did not strictly follow the varying standards 
+of the time so it is referred to as the Virginia NWBD.  This layer used the 1995 sixth level hydrologic unit system as its basis.  Where at all possible, VaNWBD units were 
+delineated so as to preserve the delineation intentions of the previous HU product, which has been widely used by state and federal agencies.  This adherence to previous 
+products was not part of the new standard.  Despite the aim to make the VaNWBD units be the same as, or subsets of, the 1995 sixth level units, a number of boundary changes 
+were made to accomodate the smaller unit size requirement of the sixth level units of the VaNWBD as per the new standards.  While 14 digit hydrologic units of the 1995 
+version that are of a size that is within the acceptable range of the NWBD sixth level units were usually maintained, almost all larger units were divided. The primary 
+differences between the sixth level units of this version of the VaNWBD and the 14 digit units of the 1995 layer are the following improvements: (1) all linework was 
+redigitized in a heads up manner which improved capture accuracy; (2) updated HU delineation standards were used that were supported by a consortium of federal agencies 
+and not just the USDA; (3) the new sixth level units are much smaller in area, typically from 10,000 to 40,000 acres, whereas the previous HU layer units averaged just 
+over 54,000 acres in size; (4) water side delineations of frontal units now go to the toeface of the shore, which varies from 10 feet deep in the Bays to 30 feet deep in 
+the Atlantic Ocean. Delineations also proceeded out to the 3 nautical mile territorial limit in the Atlantic; (5) units became seamless bewteen states in both linework 
+and numbering; 6) fifth level units (10 digits) were created from the sixth level units (12 digits). The 1995 version required 11 and 14 digits for the same fifth and 
+sixth level references; (7) units were coded uniquely and by drainage basin beginning upstream and proceeding sequentially to each unit downstream.  The general order 
+is main stem of the primary water feature followed by tributairy, with no fifth or sixth level unit flowing into a unit of a lower reference code; (8) other useful  
+attributes were added, including unit type, unit modifiers, state codes, and linework source.
+                </procdesc>
+				<srcused>VAHU14</srcused>
+				<srcused>NOAA_Charts</srcused>
+				<srcused>USGS_7.5</srcused>
+				<srcused>USDA_DRG</srcused>
+				<srcused>HUstandards_2004</srcused>
+				<procdate>200607</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Version 2 of the VaNWBD was created following 10 months of use of VaNWBDv1 after enough attribute coding errors were found in the initial release to 
+warrant a revised, corrected version. No linework changes were made.  Most edits applied to the sixth level coding but a few applied to the fifth level coding.  Many
+involved a continued effort to keep the VaNWBD seamless between the states.  Less than 0.4% of the 27,600+ developer-entered attributes required correction. A summary of
+attribution changes made to create VaNWBDv2 exists in a spreadsheet at DCR's Hydrologic Unit Geography web page: http://www.dcr.virginia.gov/soil-and-water/hu.shtml.
+                </procdesc>
+				<srcused>USDA_DRG</srcused>
+				<srcused>VaNWBDv1</srcused>
+				<srcused>HUstandards_2004</srcused>
+				<procdate>200705</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Version 3 of the VaNWBD was created following modifications to the North Carolina, West Virginia, Maryland, and Pennsylvania WBD products as well 
+as irregularities found in the Virginia layer during tests by Laura Davenport (USDA) and Sarah Walton (USGS) in May 2008 while looking for seamless data issues.
+Attribution issues similar to those found in these tests were edited as part of this update as well.  There was also three linework additions that created new 
+polygons but not new units.  Attribution issues included the following: (1) HUC_12, HUC_10, and HU_12_DS renumbering due to renumberings in other states;
+(2) unit names including "Headwaters" required the term before the feature name; (3) unit names could no longer include the term "Deep" (Atlantic, Chesapeake, and 
+Potomac)but could now include the unit code # (feature-#); (4) a META_ID variable was added to the polygon records.  Initial values for the polygon and the arc 
+entries for META_ID were VA01 but were changed to VA02 for those polygons with attribution changes in May 2007 (v2) and changed to VA03 for arcs modifed in 
+VaNWBDv3 and for polygons with attribution changes in Sept/Oct 2008.  A summary of linework and attribution changes made to create VaNWBDv3 exists in a spreadsheet 
+at DCR's Hydrologic Unit Geography web page: http://www.dcr.virginia.gov/soil-and-water/hu.shtml.
+                </procdesc>
+				<srcused>USDA_DRG</srcused>
+				<srcused>USGS_DOQQ</srcused>
+				<srcused>VaNWBDv2</srcused>
+				<srcused>HUstandards_2004</srcused>
+				<procdate>200810</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Version 4 of the VaNWBD was needed following completion of the sixth level WBD units in the surrounding states.  Small boundary adjustments at state 
+borders were made and a few attributes corrected, especially for the HU_LEVEL arc variable. Minor linework modifications created no new polygons or units. 
+The META_ID variable was changed to VA04 for all polygons and arcs affected by attribution or geometry modifications.  A summary of linework and attribution changes 
+made to create VaNWBDv4 exists in a spreadsheet at DCR's Hydrologic Unit Geography web page: http://www.dcr.virginia.gov/soil-and-water/hu.shtml.
+                </procdesc>
+				<srcused>USDA_DRG</srcused>
+				<srcused>VaNWBDv3</srcused>
+				<srcused>HUstandards_2009</srcused>
+				<procdate>200909</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Version 5 of the VaNWBD was created to make a few linework and attribution corrections, to update rapidly changing shoreline linework, to reflect
+an updated state boundary, to smooth the linework where it crossed the new state boundary, and to make the attribution changes neded to reflect the recent WBD model
+schema update.  Schema modifications included the following line attribution changes: (1) HULevel was replaced by HUDigits, (2) HUMod codes were added and used a 
+new code set; (3) META_ID was dropped but is maintained by Virginia in a seperate table; (4) non-standard linesource codes have been replaced by federal standard 
+codes. Schema modifications included the following polygon attribution changes: (1) HUMod codes use a new code set and are seperated by a comma not a forward slash; 
+(2) 10-digit references are dropped; (3) some attributes are renamed - HUC_12 now HUC12, HU_12_DS now ToHUC, HU_12_Name now Name, HU_12_Mod now HUMod, HU_12_Type 
+now HUType; (4) META_ID was dropped but is maintained by Virginia in a seperate table.  In addition the following changes were made that are not related to standard 
+changes: (1) calculated unit areas were not included for polygons except as the system automatically records them; (2) units which cross the Virginia state boundary 
+are included in whole and not just that portion in Virginia; (3) cross-border units are divided at the state boundary for selection purposes with each portion identified 
+as to the state it is in; (4) both the federal standards unit name and Virginia name for each unit are given. Attribution edits were predominatly made to reflect the 
+new HUMod code set and to correct ToHUC errors found by a USGS review from 2013-2014.  A summary of linework and attribution changes made to create VaNWBDv5 exists 
+in a spreadsheet at DCR's Hydrologic Unit Geography web page: http://www.dcr.virginia.gov/soil-and-water/hu.shtml.
+                </procdesc>
+				<srcused>USDA_DRG</srcused>
+				<srcused>VBMP</srcused>
+				<srcused>VaNWBDv4</srcused>
+				<srcused>HUstandards_2013</srcused>
+				<srcused>WBDcom</srcused>
+				<procdate>201607</procdate>
+			</procstep>
+<procstep>
+				<procdesc>Version 6 of the VaNWBD was created to make it compliant with the modifications found necessary by a national fifth and sixth level
+unit name review by the USGS.  This review also requested a fifth level unit change that created two HUDigits changes, a HUC12 change, and several ToHUC changes. A summary
+of linework and attribution changes made to create VaNWBDv6 exists in a spreadsheet at DCR's Hydrologic Unit Geography web page: http://www.dcr.virginia.gov/soil-and-water/hu.shtml.
+                			</procdesc>
+				<srcused>USDA_DRG</srcused>
+				<srcused>VBMP</srcused>
+				<srcused>VaNWBDv5</srcused>
+				<srcused>HUstandards_2013</srcused>
+				<srcused>WBDcom</srcused>
+				<procdate>201907</procdate>
+				<proccont>
+					<cntinfo>
+						<cntperp>
+							<cntper>Karl Huber</cntper>
+							<cntorg>Virginia Department of Conservation and Recreation, Divisiion of Soil and Water Conservation</cntorg>
+						</cntperp>
+						<cntpos>Geoinfomatics Specialist</cntpos>
+						<cntaddr>
+							<addrtype>mailing and physical</addrtype>
+							<address>600 East Main St.</address>
+							<address>4th Floor</address>
+							<city>Richmond</city>
+							<state>VA</state>
+							<postal>23219</postal>
+						</cntaddr>
+						<cntvoice>804-625-3971</cntvoice>
+						<cntemail>karl.huber@dcr.virginia.gov</cntemail>
+					</cntinfo>
+				</proccont>
+			</procstep>
+		</lineage>
+	</dataqual>
+	<spref>
+		<horizsys>
+			<planar>
+				<mapproj>
+					<mapprojn>Lambert Conformal Conic</mapprojn>
+					<lambertc>
+						<stdparll>37.0</stdparll>
+						<stdparll>39.5</stdparll>
+						<longcm>-79.5</longcm>
+						<latprjo>36.0</latprjo>
+						<feast>0.0</feast>
+						<fnorth>0.0</fnorth>
+					</lambertc>
+				</mapproj>
+				<planci>
+					<plance>coordinate pair</plance>
+					<coordrep>
+						<absres>.0001</absres>
+						<ordres>.0001</ordres>
+					</coordrep>
+					<plandu>meters</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn>D North American 1983</horizdn>
+				<ellips>GRS 1980</ellips>
+				<semiaxis>6378137.0</semiaxis>
+				<denflat>298.257222101</denflat>
+			</geodetic>
+		</horizsys>
+	</spref>
+	<eainfo>
+		<detailed>
+			<enttyp>
+				<enttypl>vanwbd6a_v6.dbf</enttypl>
+				<enttypd>attributes of arcs in VaNWBDv6</enttypd>
+				<enttypds>ESRI</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>OBJECTID</attrlabl>
+				<attrdef>feature number, automatically generated ID by ArcGIS</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>sequential automatically generated number</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>data type of geometry, automatically generated by ArcGIS</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>data type of geometry</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>META_ID</attrlabl>
+				<attrdef>indicator of version in which linework or line attribution creation or editting occurred</attrdef>
+				<attrdefs>Federal Standards for Delineation of Hydrologic Unit Boundaries; Version 2.0</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>VA01</edomv>
+						<edomvd>arc linework and attributes set at the time of VaNWBDv1 completion in 2006</edomvd>
+						<edomvds>USDA NRCS</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA02</edomv>
+						<edomvd>arc linework and attributes last revised in the creation of VaNWBDv2 in May 2007</edomvd>
+						<edomvds>USDA NRCS</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA03</edomv>
+						<edomvd>arc linework and attributes last revised in the creation of VaNWBDv3 in Sept and Oct 2008</edomvd>
+						<edomvds>USDA NRCS</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA04</edomv>
+						<edomvd>arc linework and attributes last revised in the creation of VaNWBDv4 in Aug and Sept 2009</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA05</edomv>
+						<edomvd>Arc linework and attributes last revised in the creation of VaNWBDv5 from January-July 2016.  This excludes attribution of new variable 
+HUDigits unless previous HULevel was incorrect.</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA06</edomv>
+						<edomvd>Arc linework and attributes last revised in the creation of VaNWBDv6 from January-June 2019.  </edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HUMod</attrlabl>
+				<attrdef>Identifiers of modifications to natural overland flow within the sixth level unit HUC12.  Multiple modifiers may apply.</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>MA</edomv>
+						<edomvd>mining activity</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>AW</edomv>
+						<edomvd>artificial waterway</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>DM</edomv>
+						<edomvd>dam at outlet or HU boundary</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>UA</edomv>
+						<edomvd>urban area</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>TF</edomv>
+						<edomvd>transportation feature</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>NM</edomv>
+						<edomvd>no modifications</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HUDigits</attrlabl>
+				<attrdef>lowest level of hydrologic units using this arc as a boundary</attrdef>
+				<attrdefs>WBD model 2.2.1</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>0</edomv>
+						<edomvd>Virginia state boundary only, as it relates to this dataset.  This linework is included here because a state boundary from 
+other sources will not perfectly align with the hydrologic unit boundaries of this layer where the two are suppose to be coterminous, usually 
+along a ridge line that is also the state boundary. The result would be to create many small occurrences along these boundary portions 
+of the state that are units not meant to occur in Virginia.</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+					<edom>
+						<edomv>2</edomv>
+						<edomvd>lowest level of hydrologic unit that this boundary delineates is a region</edomvd>
+						<edomvds>Watershed Boundary Dataset (WBD) Community</edomvds>
+					</edom>
+					<edom>
+						<edomv>4</edomv>
+						<edomvd>lowest level of hydrologic unit that this boundary delineates is a subregion</edomvd>
+						<edomvds>Watershed Boundary Dataset (WBD) Community</edomvds>
+					</edom>
+					<edom>
+						<edomv>6</edomv>
+						<edomvd>lowest level of hydrologic unit that this boundary delineates is a basin</edomvd>
+						<edomvds>Watershed Boundary Dataset (WBD) Community</edomvds>
+					</edom>
+					<edom>
+						<edomv>8</edomv>
+						<edomvd>lowest level of hydrologic unit that this boundary delineates is a subbasin</edomvd>
+						<edomvds>Watershed Boundary Dataset (WBD) Community</edomvds>
+					</edom>
+					<edom>
+						<edomv>10</edomv>
+						<edomvd>lowest level of hydrologic unit that this boundary delineates is a watershed</edomvd>
+						<edomvds>Watershed Boundary Dataset (WBD) Community</edomvds>
+					</edom>
+					<edom>
+						<edomv>12</edomv>
+						<edomvd>lowest level of hydrologic unit that this boundary delineates is a subwatershed</edomvd>
+						<edomvds>Watershed Boundary Dataset (WBD) Community</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>LineSource</attrlabl>
+				<attrdef>The source(s) of the linework</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>DRG24</edomv>
+						<edomvd>linework developed by DCR using USDA DRGs of USGS 7.5 minute quads as the basis</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>BATH40</edomv>
+						<edomvd>linework developed by DCR using NOAA 1:40,000 scale charts as the basis</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>ORTHO12</edomv>
+						<edomvd>linework developed by DCR in the past using 1:12,000 orthoimagery as the basis</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>ORTHO200</edomv>
+						<edomvd>linework developed by DCR using 1:200 orthoimagery as the basis</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>LIDAR</edomv>
+						<edomvd>linework developed by VA USDA NRCS or Virginia Beach using Lidar as the basis</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>BUFFER3NM</edomv>
+						<edomvd>linework developed by DCR as a 3 nautical mile buffer from the latest delineated Atlantic shoreline</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>OTH</edomv>
+						<edomvd>Other sources of linework from which DCR constructed HU boundaries.  This includes linework collected
+from local governments and artificial breaks to unit extents, particularly those across tidal waters.</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Null</edomv>
+						<edomvd>source of linework is unknown</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape_Length</attrlabl>
+				<attrdef>length of arc defining a polygon boundary, automatically generated by ArcGIS</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>1.57772</rdommin>
+						<rdommax>97917.055705</rdommax>
+						<attrunit>meters</attrunit>
+					</rdom>
+				</attrdomv>
+			</attr>
+		</detailed>
+		<detailed>
+			<enttyp>
+				<enttypl>vanwbd6p_v6.dbf</enttypl>
+				<enttypd>attributes of polygons in VaNWBDv6</enttypd>
+				<enttypds>ESRI</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>OBJECTID</attrlabl>
+				<attrdef>feature number, automatically generated ID by ArcGIS</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>sequential automatically generated number</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>data type of geometry, automatically generated by ArcGIS</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>data type of geometry</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HUC12</attrlabl>
+				<attrdef>unique 12 digit code of sixth level unit</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>020403030501</rdommin>
+						<rdommax>060102060404</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>VAHU6</attrlabl>
+				<attrdef>A four character unit identifying string, unique per sixth level unit in Virginia. The first two characters are abbreviations 
+for the basin the unit lies in.  The following two digits are the sequential references within that basin, coded upstream to the outlet.</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>AO01</rdommin>
+						<rdommax>YO69</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Portion</attrlabl>
+				<attrdef>postal abbreviations of the state(s) in which this portion of a state border-crossing unit occurs, with a null indicating non border-crossing unit</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<codesetd>
+						<codesetn>ISO 3166-2:US</codesetn>
+						<codesets>International Organization for Standards</codesets>
+					</codesetd>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape_Length</attrlabl>
+				<attrdef>length of polygon boundary, automatically generated by ArcGIS</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>67438.353576</rdommin>
+						<rdommax>489809.536652</rdommax>
+						<attrunit>meters</attrunit>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Shape_Area</attrlabl>
+				<attrdef>area of polygon, automatically generated by ArcGIS</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>976.787</rdommin>
+						<rdommax>2769554666.117</rdommax>
+						<attrunit>square meters</attrunit>
+					</rdom>
+				</attrdomv>
+			</attr>
+		</detailed>
+		<detailed>
+			<enttyp>
+				<enttypl>master12_v6.dbf</enttypl>
+				<enttypd>additional normalized attributes of sixth level units in VaNWBDv6</enttypd>
+				<enttypds>VA DCR</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>VAHU6</attrlabl>
+				<attrdef>A four character unit identifying string, unique per sixth level unit in Virginia. The first two characters are abbreviations 
+for the basin the unit lies in.  The following two digits are the sequential references within that basin, coded upstream to the outlet.</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>AO01</rdommin>
+						<rdommax>YO69</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HUC12</attrlabl>
+				<attrdef>unique 12 digit code of sixth level unit</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>020403030501</rdommin>
+						<rdommax>060102060404</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>VaName</attrlabl>
+				<attrdef>English name that uniquely identifies unit HUC12 in the Virginia NWBD naming format</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<udom>HU names consist of the names of major water features within the unit beginning with the most prominent feature and
+continuing until the unit name is unique within its fifth level unit.  Dashes are placed between feature names. Feature names which are joined by
+a forward slash (/) are two ways of referencing the same feature in the unit.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>States</attrlabl>
+				<attrdef>postal abbreviations of the state(s) in which this unit occurs</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<codesetd>
+						<codesetn>ISO 3166-2:US</codesetn>
+						<codesets>International Organization for Standards</codesets>
+					</codesetd>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>PC_Water</attrlabl>
+				<attrdef>Percent of unit HUC12 that is open water.  At this time this figure is based solely on the portion of HUC12 that occurs in
+Virginia. Mudflats that are covered by water at high tide were considered open water when calculating this value.</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>0</rdommin>
+						<rdommax>100</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Tidal</attrlabl>
+				<attrdef>indicates if waters in unit HUC12 are tidally influenced</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>T</edomv>
+						<edomvd>tidally influenced</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>N</edomv>
+						<edomvd>not tidally influenced</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>VAHUSB</attrlabl>
+				<attrdef>The Virginia code for the subbasin in which HUC12 occurs.  This is the same as the first two characters of the VAHU6 code.</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<codesetd>
+						<codesetn>Subbasins of the Virginia NWBD</codesetn>
+						<codesets>refer to the Entity and Attribute Overview for valid values</codesets>
+					</codesetd>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HUType</attrlabl>
+				<attrdef>hydrologic unit type for sixth level unit HUC12</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Standard</edomv>
+						<edomvd>a unit of mostly land with a single outlet point, excluding non-contributing areas</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Frontal</edomv>
+						<edomvd>Frontal units are those along ocean, bay, and large lake shorelines that usually have more than one outlet.
+They are predominantly land but may include some water near the outlet(s).</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Water</edomv>
+						<edomvd>water units, composed of at least 70% water which includes mudflats</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Multiple Outlets</edomv>
+						<edomvd>a unit that has more than one natural outlet, excluding frontal and water units and those with karst outflow</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Island</edomv>
+						<edomvd>a unit of one or more islands and adjacent water out to the toe of the shore face</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Unclassified</edomv>
+						<edomvd>unclassified units are those that cannot be defined using the list of approved unit types</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HUMod</attrlabl>
+				<attrdef>Identifiers of modifications to natural overland flow within the sixth level unit HUC12.  Multiple modifiers may apply.</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>MA</edomv>
+						<edomvd>mining activity</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>AW</edomv>
+						<edomvd>artificial waterway</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>KA</edomv>
+						<edomvd>karst</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>UA</edomv>
+						<edomvd>urban area</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>RS</edomv>
+						<edomvd>reservoir</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>NM</edomv>
+						<edomvd>no modifications</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>PD</edomv>
+						<edomvd>pipe diversion</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>WD</edomv>
+						<edomvd>withdrawal</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+					<edom>
+						<edomv>RC</edomv>
+						<edomvd>receiving</edomvd>
+						<edomvds>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>FedName</attrlabl>
+				<attrdef>English name that uniquely identifies unit HUC12 in the federal WBD naming format</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<udom>HU names consist of the names of major water features within the unit beginning with the least prominent of the features
+to be included in the name and continuing until the unit name is unique within its fifth level unit. Dashes are placed between feature names.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>ToHUC</attrlabl>
+				<attrdef>either the HUC12 code of the sixth level unit which is receiving the majority of the flow from this HUC12, or the string "OCEAN"</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>020403030503</rdommin>
+						<rdommax>060102060405</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>META_ID</attrlabl>
+				<attrdef>indicator of version in which polygon attribution creation or editting occurred</attrdef>
+				<attrdefs>Federal Guidelines, Requirements, and Procedures for the National Watershed Boundary Dataset</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>VA01</edomv>
+						<edomvd>polygon attributes set at the time of VaNWBDv1 completion in 2006</edomvd>
+						<edomvds>USDA NRCS</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA02</edomv>
+						<edomvd>polygon attributes last revised in the creation of VaNWBDv2 in May 2007</edomvd>
+						<edomvds>USDA NRCS</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA03</edomv>
+						<edomvd>polygon attributes last revised in the creation of VaNWBDv3 in Sept and Oct 2008</edomvd>
+						<edomvds>USDA NRCS</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA04</edomv>
+						<edomvd>polygon attributes last revised in the creation of VaNWBDv4 in Aug and Sept 2009</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>VA05</edomv>
+						<edomvd>polygon attributes last revised in the creation of VaNWBDv5 from January-July 2016</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>Location</attrlabl>
+				<attrdef>an indication of the extent of the HUC12 relative to extent of the boundary of Virginia</attrdef>
+				<attrdefs>VA DCR</attrdefs>
+				<attrdomv>
+					<edom>
+						<edomv>Internal</edomv>
+						<edomvd>the HUC12 is located wholly within Virginia</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+				<attrdomv>
+					<edom>
+						<edomv>Partial</edomv>
+						<edomvd>the HUC12 is located in Virginia and at least one other state or the District of Columbia</edomvd>
+						<edomvds>VA DCR</edomvds>
+					</edom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>FedName</attrlabl>
+				<attrdef>English name that uniquely identifies unit HUC12 in the federal WBD naming format</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<udom>HU names consist of the names of major water features within the unit beginning with the least prominent of the features
+to be included in the name and continuing until the unit name is unique within its fifth level unit. Dashes are placed between feature names.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>ToHUC</attrlabl>
+				<attrdef>either the HUC12 code of the sixth level unit which is receiving the majority of the flow from this HUC12, or the string "OCEAN"</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>020403030503</rdommin>
+						<rdommax>060102060405</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>HUC10</attrlabl>
+				<attrdef>unique 10 digit code representing the fifth level unit that includes unit HUC12</attrdef>
+				<attrdefs>Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>0204030305</rdommin>
+						<rdommax>0601020604</rdommax>
+					</rdom>
+				</attrdomv>
+			</attr>
+		</detailed>
+		<overview>
+			<eaover>The delineated hydrologic units of this dataset are represented as closed polygons.  Boundaries are representative of ridge lines or,
+where there is little topographic difference, the imagined line along which water on either side flows off into different streams or other bodies 
+of water.  The polygons/units are coded with the official 12 digit codes as well as with custom shorthand codes that begins with a subbasin code.
+
+Subbasin codes used in this layer are not part of the WBD standard but a Virginia feature.  There meanings are as follows:	  
+AO - Atlantic Ocean Coastal
+AS - Albemarle Sound Coastal
+BS - Big Sandy River
+CB - Cheasapeake Bay and Small Bay Coastal
+CL - Chowan River, Lower
+CM - Chowan River, Middle
+CU - Chowan River, Upper
+JA - James River-Appomattox River
+JL - James River, Lower
+JM - James River, Middle
+JR - James River-Rivanna River
+JU - James River, Upper
+NE - New River
+PL - Potomac River, Lower
+PS - Potomac River-Shenandoah River
+PU - Potomac River, Upper
+RA - Rappahannock River
+RD - Roanoke River-Dan River
+RL - Roanoke River, Lower
+RU - Roanoke River, Upper
+TC - Tennessee River-Clinch River
+TH - Tennessee River-Holston River
+TP - Tennessee River-Powell River
+YA - Yadkin River
+YO - York River 
+            </eaover>
+            <eadetcit>See "Federal Standards and Procedures for the National Watershed Boundary Dataset (WBD); Fourth Edition" for details on development of
+the WBD and details on the attributes that are part of that standard.  Go to the online source of this dataset for more information on the Virginia NWBD.</eadetcit>		
+		</overview>
+	</eainfo>
+	<distinfo>
+        <distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>Karl Huber</cntper>
+					<cntorg>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</cntorg>
+				</cntperp>
+				<cntaddr>
+					<addrtype>mailing and physical</addrtype>
+					<address>600 East Main St.</address>
+					<address>4th Floor</address>
+					<city>Richmond</city>
+					<state>VA</state>
+					<postal>23219</postal>
+				</cntaddr>
+				<cntvoice>804-625-3971</cntvoice>
+				<cntemail>karl.huber@dcr.virginia.gov</cntemail>
+			</cntinfo>
+        </distrib>
+		<resdesc>Virginia NWBD Version 6</resdesc>
+		<distliab>none</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>ESRI shapefile</formname>
+					<formvern>from ArcGIS 10.3.1</formvern>
+					<filedec>Windows extraction</filedec>
+					<transize>17.3</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+					    <computer>
+						    <networka>
+							    <networkr>DCR HU Geography web page at http://www.dcr.virginia.gov/soil-and-water/hu.shtml</networkr>
+							</networka>
+						</computer>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<fees>none</fees>
+		</stdorder>
+	</distinfo>
+	<metainfo>
+		<metd>20190709</metd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Karl Huber</cntper>
+					<cntorg>Virginia Department of Conservation and Recreation, Division of Soil and Water Conservation</cntorg>
+				</cntperp>
+				<cntpos>Geoinfomatics Specialist</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical</addrtype>
+					<address>600 East Main St.</address>
+					<address>4th Floor</address>
+					<city>Richmond</city>
+					<state>VA</state>
+					<postal>23219</postal>
+				</cntaddr>
+				<cntvoice>804-625-3971</cntvoice>
+				<cntemail>karl.huber@dcr.virginia.gov</cntemail>
+			</cntinfo>
+		</metc>
+		<metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+		<metstdv>FGDC-STD-001.1-1998</metstdv>
+	</metainfo>
+</metadata>
